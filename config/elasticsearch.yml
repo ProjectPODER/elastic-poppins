@@ -1,0 +1,17 @@
+cluster.name: "es-cluster"
+network.host: 0.0.0.0
+xpack.security.enabled: false 
+xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.verification_mode: certificate
+xpack.security.transport.ssl.keystore.path: /usr/share/elasticsearch/config/certs/cert.p12
+xpack.security.transport.ssl.truststore.path: /usr/share/elasticsearch/config/certs/cert.p12
+xpack.security.http.ssl.enabled: false
+xpack.security.http.ssl.keystore.path: /usr/share/elasticsearch/config/certs/http.p12
+xpack.security.http.ssl.verification_mode: certificate
+xpack.monitoring.collection.enabled: true
+xpack.security.authc.anonymous.username: anonymous_user 
+xpack.security.authc.anonymous.roles: publico    
+xpack.security.authc.anonymous.authz_exception: true 
+xpack.security.authc.realms.file.file1.order: "0"
+xpack.security.authc.realms.native.native1.order: "1"
+s3.client.default.endpoint: sfo3.digitaloceanspaces.com
